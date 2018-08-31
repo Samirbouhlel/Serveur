@@ -34,8 +34,8 @@ public class ProduitController {
     public void updateProduit(@RequestBody Produit produit) {
     	produitservice.updateProduit(produit);
     }
-    @DeleteMapping("/{ref}")
-    public void deleteProduit(@PathVariable String ref) {
-    	produitservice.deleteProduit(ref);
+    @DeleteMapping("/{id}")
+    public void deleteProduit(@PathVariable Long id) {
+    	produitservice.deleteProduit(id);
     }
 }
